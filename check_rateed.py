@@ -196,10 +196,25 @@ def send_email(resend_api_key: str, to_email: str, subject: str, html: str):
 # Main
 # ---------------------------------------------------------------------------
 def main():
-    username = os.environ["RATEED_USERNAME"]
+    names = ["RATEED_USERNAME", "RATEED_PASSWORD", "RESEND_API_KEY", "NOTIFY_EMAIL"]
+    missing = [n for n in names if not os.environ.get(n, "").strip()]
+    if missing:
+        sys.exit(f"ERROR: these secrets are empty or missing: {', '.join(missing)}")
+
+    username = os.environ["RATEED_USERNAME"].strip()
     password = os.environ["RATEED_PASSWORD"]
-    resend_key = os.environ["RESEND_API_KEY"]
-    notify_email = os.environ["NOTIFY_EMAIL"]
+    resend_key = os.environ["RESEND_API_KEY"].strip()
+    notify_email = os.environ["NOTIFY_EMAIL"].strip()
+
+    # Manual test mode: just send a test email and stop
+    if os.environ.get("SEND_TEST_EMAIL", "").lower() == "true":
+        send_email(
+            resend_key,
+            notify_email,
+            subject="✅ RateEd Watcher test email",
+            html="If you can read this, email delivery works. The watcher will email you when a test is scheduled and remind you 1 day and 1 hour before.",
+        )
+        return
 
     access_token, id_token = cognito_login(username, password)
     items = fetch_upcoming(access_token, id_token)
