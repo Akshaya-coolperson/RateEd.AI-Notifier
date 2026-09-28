@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 * * * *"   # every hour, on the hour (UTC)
   workflow_dispatch:        # lets you manually trigger it from the Actions tab
+    inputs:
+      send_test_email:
+        description: "Only send a test email (skips the RateEd check)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -29,6 +34,7 @@ jobs:
           RATEED_PASSWORD: ${{ secrets.RATEED_PASSWORD }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          SEND_TEST_EMAIL: ${{ inputs.send_test_email }}
         run: python check_rateed.py
 
       - name: Commit updated state (if changed)
