@@ -1,5 +1,9 @@
 {
-  "notified_new": [],
-  "reminded_1day": [],
+  "notified_new": [
+    "65e44228-8495-4911-93e6-bbb4c3c760d8"
+  ],
+  "reminded_1day": [
+    "65e44228-8495-4911-93e6-bbb4c3c760d8"
+  ],
   "reminded_1hr": []
 }
