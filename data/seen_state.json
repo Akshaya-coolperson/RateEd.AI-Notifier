@@ -1,11 +1,5 @@
 {
-  "notified_new": [
-    "48decd5a-85c3-4e75-aa84-d12a1c75c97d",
-    "a6c50e34-57c6-47ff-8e7e-edc14adfa441"
-  ],
-  "reminded_1day": [
-    "48decd5a-85c3-4e75-aa84-d12a1c75c97d",
-    "a6c50e34-57c6-47ff-8e7e-edc14adfa441"
-  ],
+  "notified_new": [],
+  "reminded_1day": [],
   "reminded_1hr": []
 }
