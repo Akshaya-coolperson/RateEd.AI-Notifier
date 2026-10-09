@@ -1,19 +1,5 @@
 {
-  "notified_new": [
-    "a3d146bf-a23c-4e37-aaf7-ed4867e471c0",
-    "9b49cc75-4c5b-45f2-8e17-ec24b411ea2d",
-    "1a5e9769-f2fc-41fa-a324-0e8a9238c711",
-    "28d96269-f638-4640-8904-f8874cfb300d",
-    "edd425b1-d970-4514-ac15-0845ae9176c8",
-    "f4ad16c4-5a67-4302-b746-2f8dd17d07d2"
-  ],
-  "reminded_1day": [
-    "a3d146bf-a23c-4e37-aaf7-ed4867e471c0",
-    "9b49cc75-4c5b-45f2-8e17-ec24b411ea2d",
-    "1a5e9769-f2fc-41fa-a324-0e8a9238c711",
-    "28d96269-f638-4640-8904-f8874cfb300d",
-    "edd425b1-d970-4514-ac15-0845ae9176c8",
-    "f4ad16c4-5a67-4302-b746-2f8dd17d07d2"
-  ],
+  "notified_new": [],
+  "reminded_1day": [],
   "reminded_1hr": []
 }
