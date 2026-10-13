@@ -1,14 +1,5 @@
 {
-  "notified_new": [
-    "677a84f7-ceed-4d7e-b587-072c5f96fe8e",
-    "377a5d99-98c1-40c8-b60c-67c154bc4bc3"
-  ],
-  "reminded_1day": [
-    "677a84f7-ceed-4d7e-b587-072c5f96fe8e",
-    "377a5d99-98c1-40c8-b60c-67c154bc4bc3"
-  ],
-  "reminded_1hr": [
-    "677a84f7-ceed-4d7e-b587-072c5f96fe8e",
-    "377a5d99-98c1-40c8-b60c-67c154bc4bc3"
-  ]
+  "notified_new": [],
+  "reminded_1day": [],
+  "reminded_1hr": []
 }
