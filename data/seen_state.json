@@ -1,5 +1,13 @@
 {
-  "notified_new": [],
-  "reminded_1day": [],
+  "notified_new": [
+    "a6bf46a6-3817-4eed-ae81-3d52222e9efa",
+    "ffb30868-47a9-402a-8f89-a894b802ad3d",
+    "4aef1124-37fc-47a1-871d-74bf28e567e8"
+  ],
+  "reminded_1day": [
+    "a6bf46a6-3817-4eed-ae81-3d52222e9efa",
+    "ffb30868-47a9-402a-8f89-a894b802ad3d",
+    "4aef1124-37fc-47a1-871d-74bf28e567e8"
+  ],
   "reminded_1hr": []
 }
